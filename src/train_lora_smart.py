@@ -1,8 +1,6 @@
 """
-SMART LoRA Training - Minimax Version
-=====================================
-Sanitized version for public release.
-Replace local paths with relative paths and generic identifiers.
+SMART LoRA Training
+Physics-inspired regularization for efficient fine-tuning.
 """
 
 import os
@@ -31,11 +29,11 @@ from peft import LoraConfig as PeftLoraConfig
 # Add parent dir for imports
 sys.path.append(str(Path(__file__).parent.parent / "src"))
 
-from config_lora_minimax import get_lora_config
-from data_processor_minimax import ZEngineerDataset, load_jsonl, create_splits as create_base_splits
+from config_lora_smart import get_lora_config
+from data_processor_smart import ZEngineerDataset, load_jsonl, create_splits as create_base_splits
 
 # Import Smart Components
-from smart_components_minimax import (
+from smart_components_smart import (
     EntropicRegularizer,
     HolographicDepthRegularizer,
     DifferentiableTopologyRegularizer,

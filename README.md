@@ -22,12 +22,12 @@ SMART LoRA combines four distinct regularization techniques:
 ```
 SMART-LoRA/
 ├── src/                    # Source code
-│   ├── train_lora_minimax.py
-│   ├── smart_components_minimax.py
-│   ├── config_lora_minimax.py
-│   └── data_processor_minimax.py
+│   ├── train_lora_smart.py
+│   ├── smart_components_smart.py
+│   ├── config_lora_smart.py
+│   └── data_processor_smart.py
 ├── config/                 # Configuration files
-│   ├── config_minimax.py
+│   ├── config_smart.py
 │   └── env_example
 ├── logs/                   # Training logs
 ├── benchmarks/             # Benchmark results
@@ -68,7 +68,7 @@ HSA_OVERRIDE_GFX_VERSION=11.5.1
 
 ```bash
 cd src
-python train_lora_minimax.py
+python train_lora_smart.py
 ```
 
 ## Regularizers
