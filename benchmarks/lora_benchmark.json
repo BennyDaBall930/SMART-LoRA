@@ -1,0 +1,100 @@
+{
+  "config": {
+    "base_model_path": "E:\\AI\\AI_TRAINING\\model",
+    "checkpoint_root": "E:\\AI\\AI_TRAINING\\checkpoints_lora\\run_lora_20260210_000612_5924\\checkpoints",
+    "checkpoints": "1750",
+    "tests": "4",
+    "test_chat_path": "E:\\AI\\AI_TRAINING\\test_chat.py",
+    "system_prompts_md": "E:\\AI\\AI_TRAINING\\z_engineer_system_prompts.md",
+    "tokenizer_path": "",
+    "force_style_key": "",
+    "output_prefix": "lora_benchmark",
+    "prompt_format": "chatml",
+    "enable_thinking": "default",
+    "max_new_tokens": 512,
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.8,
+    "top_k": 40,
+    "repetition_penalty": 1.05,
+    "seed": 42,
+    "device_map": "cuda"
+  },
+  "summary": {
+    "overall_rank": [
+      1750
+    ],
+    "per_checkpoint": {
+      "1750": {
+        "avg_score": 92.67,
+        "min_score": 92.67,
+        "max_score": 92.67,
+        "scores": {
+          "4": 92.67
+        }
+      }
+    },
+    "per_test_winners": {
+      "4": {
+        "checkpoint": 1750,
+        "score": 92.67
+      }
+    },
+    "per_test_style": {
+      "4": "Master Style (Combined Capabilities)"
+    },
+    "runtime_sec": 166.72812914848328
+  },
+  "rows": [
+    {
+      "checkpoint": 1750,
+      "test_key": "4",
+      "test_name": "Test Master (Combined)",
+      "style_key": "4",
+      "style_name": "Master Style (Combined Capabilities)",
+      "seed": "cyberpunk street food vendor in tokyo rain, steam rising from ramen bowl, neon signs reflecting in puddles, cinematic lighting, 85mm lens, high detail",
+      "instruction": "Transform this seed into a definitive single-paragraph masterpiece using principles of visual storytelling and semantic cinematography. Construct a clear visual hierarchy with explicit foreground, midground, and background layers to guide the eye path. Treat light as a narrative force while seamlessly weaving in specific lens specifications, aperture, and depth of field cues. Integrate a symphony of organic, manufactured, and environmental textures to create optical fidelity. Ensure the description flows as immersive, coherent prose that captures both the emotional atmosphere and the physical reality of the scene. No camera brand names. One rich, high-density paragraph.",
+      "response": "In the heart of a perpetual Tokyo downpour, a street food vendor stands resolute amidst the chaotic beauty of urban decay. An 85mm lens captures the intimate yet bustling scene, with a shallow depth of field isolating the vendor in the foreground. Steam curls up from a steaming ramen bowl, its texture rendered with hyper-realistic detail, catching the diffused glow of neon signs. The midground reveals a chaotic cityscape, blurred by motion and the heavy rain, where the reflections of neon signs dance across wet asphalt. The vendor's worn jacket and the condensation on the metal stall are rendered with painstaking attention to texture. The background dissolves into a bokeh-rich tapestry of skyscrapers and flickering advertisements, all bathed in a cool, desaturated color grade. The interplay of hard, directional light from the neon signs and the soft, diffused light of the overcast sky creates a dramatic chiaroscuro effect. The overall atmosphere is one of gritty realism, underscored by the subtle, almost imperceptible grain of the film stock. This is a world alive with sound, smell, and the promise of warmth, captured with an 85mm f/1.4 lens.",
+      "score": 92.67,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 6.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 6.666666666666666,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 15.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 5.0
+      },
+      "checks": {
+        "word_count": 186,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": false,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": false,
+        "has_color_grade": true,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 186."
+      ]
+    }
+  ]
+}

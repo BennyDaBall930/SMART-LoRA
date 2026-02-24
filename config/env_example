@@ -1,0 +1,78 @@
+# Environment Variables Template
+# ===============================
+# Copy this file to .env and adjust values as needed for your setup.
+
+# =============================================================================
+# ROCm / GPU Configuration
+# =============================================================================
+# Required for AMD GPUs on Windows
+TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1
+HSA_OVERRIDE_GFX_VERSION=11.5.1
+
+# =============================================================================
+# Paths Configuration
+# =============================================================================
+# Override default paths if needed (absolute paths recommended)
+# SMART_MODEL_DIR=./model
+# SMART_DATASET_PATH=./data/dataset.jsonl
+
+# =============================================================================
+# Training Configuration
+# =============================================================================
+# Batch size (per device)
+# SMART_BATCH_SIZE=4
+# SMART_LORA_BATCH_SIZE=4
+
+# Gradient accumulation steps
+# SMART_GRAD_ACCUM=4
+# SMART_LORA_GRAD_ACCUM=4
+
+# Max sequence length
+# SMART_MAX_LENGTH=640
+
+# =============================================================================
+# Checkpointing
+# =============================================================================
+# Save checkpoint every N steps
+# SMART_SAVE_STEPS=250
+# SMART_LORA_SAVE_STEPS=250
+
+# Evaluate every N steps
+# SMART_EVAL_STEPS=500
+# SMART_LORA_EVAL_STEPS=500
+
+# Log every N steps
+# SMART_LOGGING_STEPS=10
+
+# =============================================================================
+# Resume Training
+# =============================================================================
+# Path to checkpoint to resume from (absolute path)
+# SMART_RESUME_PATH=./checkpoints/run_20260215/checkpoints/checkpoint-1000
+
+# =============================================================================
+# Optimization (Optional)
+# =============================================================================
+# Enable gradient checkpointing to save memory
+# SMART_GRAD_CHECKPOINT=1
+
+# Enable torch.compile (experimental, may improve speed)
+# SMART_COMPILE=1
+# SMART_COMPILE_MODE=default
+
+# =============================================================================
+# SMART Regularizers (Optional)
+# =============================================================================
+# Enable training of entropic regularizer parameters
+# SMART_TRAIN_ENTROPIC_REG=0
+
+# Enable training of topology regularizer parameters
+# SMART_TRAIN_TOPO_REG=0
+
+# =============================================================================
+# Hardware Info
+# =============================================================================
+# This configuration was tested on:
+# - AMD GPU (ROCm)
+# - CPU: Multi-core workstation
+# - Memory: 32GB+ RAM recommended

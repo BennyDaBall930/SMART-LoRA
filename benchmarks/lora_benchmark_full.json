@@ -1,0 +1,898 @@
+{
+  "config": {
+    "base_model_path": "E:\\AI\\AI_TRAINING\\model",
+    "checkpoint_root": "E:\\AI\\AI_TRAINING\\checkpoints_lora\\run_lora_20260210_000612_5924\\checkpoints",
+    "checkpoints": "500,1000,1500,1750",
+    "tests": "1,2,3,4",
+    "test_chat_path": "E:\\AI\\AI_TRAINING\\test_chat.py",
+    "system_prompts_md": "E:\\AI\\AI_TRAINING\\z_engineer_system_prompts.md",
+    "tokenizer_path": "",
+    "force_style_key": "",
+    "output_prefix": "lora_benchmark_full",
+    "prompt_format": "chatml",
+    "enable_thinking": "default",
+    "max_new_tokens": 512,
+    "do_sample": true,
+    "temperature": 0.6,
+    "top_p": 0.8,
+    "top_k": 40,
+    "repetition_penalty": 1.05,
+    "seed": 42,
+    "device_map": "cuda"
+  },
+  "summary": {
+    "overall_rank": [
+      500,
+      1000,
+      1500,
+      1750
+    ],
+    "per_checkpoint": {
+      "500": {
+        "avg_score": 92.3325,
+        "min_score": 87.33,
+        "max_score": 100.0,
+        "scores": {
+          "1": 87.33,
+          "2": 89.33,
+          "3": 100.0,
+          "4": 92.67
+        }
+      },
+      "1000": {
+        "avg_score": 91.25,
+        "min_score": 80.0,
+        "max_score": 100.0,
+        "scores": {
+          "1": 94.0,
+          "2": 100.0,
+          "3": 80.0,
+          "4": 91.0
+        }
+      },
+      "1500": {
+        "avg_score": 90.8325,
+        "min_score": 80.0,
+        "max_score": 100.0,
+        "scores": {
+          "1": 94.0,
+          "2": 89.33,
+          "3": 80.0,
+          "4": 100.0
+        }
+      },
+      "1750": {
+        "avg_score": 85.605,
+        "min_score": 80.0,
+        "max_score": 92.67,
+        "scores": {
+          "1": 88.75,
+          "2": 81.0,
+          "3": 80.0,
+          "4": 92.67
+        }
+      }
+    },
+    "per_test_winners": {
+      "1": {
+        "checkpoint": 1000,
+        "score": 94.0
+      },
+      "2": {
+        "checkpoint": 1000,
+        "score": 100.0
+      },
+      "3": {
+        "checkpoint": 500,
+        "score": 100.0
+      },
+      "4": {
+        "checkpoint": 1500,
+        "score": 100.0
+      }
+    },
+    "per_test_style": {
+      "1": "Transform Style (Visual Storytelling)",
+      "2": "Expand Style (Seamless Weave)",
+      "3": "Craft Style (Semantic Cinematography)",
+      "4": "Master Style (Combined Capabilities)"
+    },
+    "runtime_sec": 1848.9487035274506
+  },
+  "rows": [
+    {
+      "checkpoint": 500,
+      "test_key": "1",
+      "test_name": "Test Flag (Visual Storytelling)",
+      "style_key": "1",
+      "style_name": "Transform Style (Visual Storytelling)",
+      "seed": "flag over street",
+      "instruction": "Craft a definitive 200-250 word single-paragraph prompt from this seed using principles of visual storytelling. Construct a clear visual hierarchy guiding the eye path, treat light as a narrative force (analyzing quality, direction, and temperature), and weave in a symphony of organic, manufactured, and environmental textures. Ensure optical fidelity and atmospheric coherence without mentioning specific camera brands. One flowing, immersive paragraph.",
+      "response": "A low-angle close-up captures a weathered American flag billowing against a gritty urban street scene, its diagonal lines emphasized by the upward tilt of the frame. The foreground is dominated by the flag's textured cotton fabric, its frayed edges catching the soft, directional light that originates from the upper left, creating subtle highlights along the folds and casting gentle shadows across the surface. This key light sculpts the three-dimensional form of the flag while also revealing the rough texture of the asphalt beneath it, where scattered pebbles and cracks add depth to the composition. The midground features the blurred silhouettes of passing vehicles, their shapes softened by motion, suggesting movement and time passing. In the background, a distant building stands partially obscured by haze, its form muted and receding into atmospheric perspective. The overall atmosphere is one of quiet urban realism, enhanced by a cool, desaturated color grade that emphasizes the grays and browns of the environment while allowing the warm amber tones of the flag to stand out as a focal point.",
+      "score": 87.33,
+      "score_components": {
+        "single_paragraph": 15.0,
+        "word_count": 9.0,
+        "no_brand": 20.0,
+        "lighting": 15.0,
+        "texture_diversity": 13.333333333333332,
+        "visual_hierarchy": 15.0,
+        "lens_mm": 0.0,
+        "aperture": 0.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 173,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": false,
+        "has_aperture": false,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": false,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": true,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 173."
+      ]
+    },
+    {
+      "checkpoint": 500,
+      "test_key": "2",
+      "test_name": "Test Balloon (Seamless Weave)",
+      "style_key": "2",
+      "style_name": "Expand Style (Seamless Weave)",
+      "seed": "exploding water balloon high speed at golden hour, in photorealistic style, medium shot waist-up, eye-level straight on, depth layering fore mid background, loop lighting portrait, mood: frozen, clouds fluffy cotton, shot with 14mm f/1.8 ultra wide, color grade: blade runner rain neon.",
+      "instruction": "Expand the seed into a 200-250 word single-paragraph prompt seamlessly weaving the subjects, relationships, spatial layout, action, environment, lighting, lens specs, aperture, depth of field, film stock or digital, shot type, camera angle, texture, color grade, and cleanliness cues into a coherent paragraph. Do NOT mention specific camera bodies or brands (like Canon R5, Sony A7), only lens specifications. One paragraph, no bullets, no line breaks.",
+      "response": "An exploding water balloon bursts mid-air in a hyper-detailed photorealistic moment, captured at golden hour’s soft glow that bathes the scene in warm amber highlights and deep shadow contrasts. The medium waist-up composition centers the balloon’s explosive trajectory, its delicate surface rippling outward like liquid glass as it shatters into countless droplets suspended mid-fall. Loop lighting from a single side creates dramatic chiaroscuro, emphasizing the balloon’s fragile form against a blurred background of fluffy cotton-like clouds drifting lazily in the sky. The foreground is sharp and textured with fine mist and reflected light, while the midground dissolves into soft bokeh, enhancing depth through layered perspective. Shot with a 14mm f/1.8 ultra-wide lens, the expansive frame captures every detail—ripples, droplets, and subtle atmospheric haze—with razor-sharp clarity. The color grade leans into a Blade Runner-inspired neon palette: electric magenta and cyan streaks bleed across the frame like digital graffiti, contrasting sharply with the warm golden hour tones. The mood is frozen in time, evoking a surreal blend of fragility and power, where nature’s fleeting beauty meets cinematic intensity.",
+      "score": 89.33,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 6.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 3.333333333333333,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 10.0,
+        "color_grade": 10.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 182,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": false,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": true,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 182."
+      ]
+    },
+    {
+      "checkpoint": 500,
+      "test_key": "3",
+      "test_name": "Test Axe (Semantic Cinematography)",
+      "style_key": "3",
+      "style_name": "Craft Style (Semantic Cinematography)",
+      "seed": "executioner's axe with notched blade, biopunk merging organic and technological, medium shot waist-up, slightly off-axis naturalistic, foreground: soft bokeh of nearby objects, background: crime scene tape fluttering, overcast sky creating massive soft box, mood: serene, atmosphere: clear, peaceful, meditative, textures: eyelash individual separation, latex sheen with stretch tension lines, rain streaks on glass, shot with 35mm f/2.8 lens, color grade: clean natural palette.",
+      "instruction": "Transform this seed into a 200-250 word single-paragraph prompt using semantic cinematography principles. Weave together subject, spatial layout with explicit foreground/midground/background layers, light sources with their effects, three texture types (organic/manufactured/environmental), lens specifications with their optical implications, and emotional atmosphere—all flowing as coherent natural language prose. Preserve the exact lens from input. No camera body brands, no bullets, no line breaks. One rich paragraph.",
+      "response": "A medium waist-up shot captures an executioner’s axe in precise midground focus, its notched blade catching soft ambient light like a delicate curve of bone against steel—biopunk merging organic form with mechanical precision. Shot through a 35mm f/2.8 lens, the image unfolds with gentle depth, slightly off-axis to lend naturalistic realism while maintaining clarity across layers. In the foreground, soft bokeh blurs nearby objects—perhaps tools or fabric folds—creating atmospheric separation that draws attention to the central subject. Behind, crime scene tape flutters gently in a breeze, its thin edges catching light like delicate filaments, adding quiet motion to the stillness. The overcast sky acts as a massive soft box, diffusing even illumination across the frame with no harsh shadows or highlights—only a calm, diffuse glow that enhances the serene mood. Textures emerge with clarity: individual eyelashes on the executioner’s face catch light in fine detail, while latex sheen on his glove shows subtle stretch tension lines like veins beneath skin. Rain streaks trace glass windows in the background, each one distinct yet blurred by distance, enhancing the sense of quiet observation. The clean natural palette—soft grays, muted greens, and pale browns—evokes a meditative atmosphere, where time slows and breath becomes audible. Every element converges to create a peaceful, reflective moment, suspended between action and stillness, as if the world itself holds its breath.",
+      "score": 100.0,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 10.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 10.0,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 0.0,
+        "aperture": 0.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 20.0,
+        "exact_lens_match": 20.0,
+        "atmosphere": 5.0
+      },
+      "checks": {
+        "word_count": 231,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": false,
+        "has_cleanliness": true,
+        "has_atmosphere": true
+      },
+      "notes": []
+    },
+    {
+      "checkpoint": 500,
+      "test_key": "4",
+      "test_name": "Test Master (Combined)",
+      "style_key": "4",
+      "style_name": "Master Style (Combined Capabilities)",
+      "seed": "cyberpunk street food vendor in tokyo rain, steam rising from ramen bowl, neon signs reflecting in puddles, cinematic lighting, 85mm lens, high detail",
+      "instruction": "Transform this seed into a definitive single-paragraph masterpiece using principles of visual storytelling and semantic cinematography. Construct a clear visual hierarchy with explicit foreground, midground, and background layers to guide the eye path. Treat light as a narrative force while seamlessly weaving in specific lens specifications, aperture, and depth of field cues. Integrate a symphony of organic, manufactured, and environmental textures to create optical fidelity. Ensure the description flows as immersive, coherent prose that captures both the emotional atmosphere and the physical reality of the scene. No camera brand names. One rich, high-density paragraph.",
+      "response": "A hyper-detailed, cinematic portrait captures a lone cyberpunk street food vendor hunched over a makeshift, rain-slicked counter in the neon-drenched alleyways of Tokyo, the composition anchored by the vendor's weathered, reflective face in the immediate foreground, illuminated by a single, harsh sodium vapor lamp casting deep, elongated shadows across the wet pavement. The midground is dominated by the steaming, amber liquid of a traditional tonkotsu ramen bowl, its rich, almost oily texture catching the ambient glow of the surrounding signage, which flicker erratically in the background—neon signs for exotic streetwear brands and underground music venues reflecting like shattered prisms in the shallow puddles pooling beneath the vendor’s booth. A sharp 85mm prime lens, set wide open at f/1.2, isolates the vendor with an impossibly shallow depth of field, rendering the background into a creamy, ethereal bokeh where the city's complex architecture dissolves into abstract color fields of magenta, cyan, and electric yellow. The overall atmosphere is thick with humidity and the scent of hot broth, the lighting scheme employing dramatic chiaroscuro to emphasize the gritty realism against the surreal, glowing backdrop, creating an image of profound, isolated culinary artistry within the overwhelming chaos of the metropolis.",
+      "score": 92.67,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 6.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 6.666666666666666,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 15.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 5.0
+      },
+      "checks": {
+        "word_count": 198,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": false,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": false,
+        "has_color_grade": false,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 198."
+      ]
+    },
+    {
+      "checkpoint": 1000,
+      "test_key": "1",
+      "test_name": "Test Flag (Visual Storytelling)",
+      "style_key": "1",
+      "style_name": "Transform Style (Visual Storytelling)",
+      "seed": "flag over street",
+      "instruction": "Craft a definitive 200-250 word single-paragraph prompt from this seed using principles of visual storytelling. Construct a clear visual hierarchy guiding the eye path, treat light as a narrative force (analyzing quality, direction, and temperature), and weave in a symphony of organic, manufactured, and environmental textures. Ensure optical fidelity and atmospheric coherence without mentioning specific camera brands. One flowing, immersive paragraph.",
+      "response": "A high-angle shot captures a weathered American flag draped across the asphalt surface of a city street, its fabric textured with fine grain and frayed edges that catch the light. The foreground is defined by the flag's diagonal placement, anchoring the composition while creating strong leading lines toward the midground where the flag meets the pavement. Behind it, a row of dark, rain-slicked concrete buildings forms a vertical backdrop, their surfaces reflecting the ambient glow of distant streetlights. The lighting is soft and diffused, likely from an overcast sky or artificial sources, casting even illumination across the scene with minimal harsh shadows. A subtle rim light outlines the flag's edge, separating it from the dark background and enhancing its three-dimensional form. The lens appears to be a wide-angle, compressing the perspective slightly and emphasizing the depth between the flag and the receding buildings. Textures include the organic weave of the flag's fabric, the manufactured grain of the asphalt, and the environmental sheen of wet pavement reflecting light. The overall atmosphere is one of quiet urban stillness, underscored by a cool color palette dominated by grays, blues, and muted earth tones.",
+      "score": 94.0,
+      "score_components": {
+        "single_paragraph": 15.0,
+        "word_count": 9.0,
+        "no_brand": 20.0,
+        "lighting": 15.0,
+        "texture_diversity": 20.0,
+        "visual_hierarchy": 15.0,
+        "lens_mm": 0.0,
+        "aperture": 0.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 190,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": false,
+        "has_aperture": false,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": false,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 190."
+      ]
+    },
+    {
+      "checkpoint": 1000,
+      "test_key": "2",
+      "test_name": "Test Balloon (Seamless Weave)",
+      "style_key": "2",
+      "style_name": "Expand Style (Seamless Weave)",
+      "seed": "exploding water balloon high speed at golden hour, in photorealistic style, medium shot waist-up, eye-level straight on, depth layering fore mid background, loop lighting portrait, mood: frozen, clouds fluffy cotton, shot with 14mm f/1.8 ultra wide, color grade: blade runner rain neon.",
+      "instruction": "Expand the seed into a 200-250 word single-paragraph prompt seamlessly weaving the subjects, relationships, spatial layout, action, environment, lighting, lens specs, aperture, depth of field, film stock or digital, shot type, camera angle, texture, color grade, and cleanliness cues into a coherent paragraph. Do NOT mention specific camera bodies or brands (like Canon R5, Sony A7), only lens specifications. One paragraph, no bullets, no line breaks.",
+      "response": "An exploding water balloon bursts in mid-air at golden hour, its delicate surface fracturing into shimmering droplets suspended in slow motion against a sky painted in warm amber and violet hues. Shot from a waist-up perspective with precise eye-level framing, the composition layers the balloon’s expanding form across foreground textures—ripples of liquid catching light like scattered diamonds—while soft, fluffy clouds drift lazily behind it, their cotton-like edges glowing faintly under diffused sunlight. The lighting is a deliberate loop portrait setup: soft rim highlights define the balloon’s curved surface, while gentle fill light sculpts its translucent skin into luminous waves. Captured through a 14mm f/1.8 ultra-wide lens, the image balances expansive depth with razor-sharp detail, emphasizing the dynamic tension between stillness and motion. The color grade leans into Blade Runner’s signature neon palette—electric blues bleeding into saturated magentas, with subtle grain overlay enhancing cinematic realism. Every droplet appears hyper-realistic yet ethereal, frozen in time as if caught mid-creation, while the background dissolves into atmospheric haze that deepens the mood of suspended wonder. The result is a photorealistic moment where nature’s fragility meets futuristic visual language, all rendered with pristine clarity and rich tonal contrast.",
+      "score": 100.0,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 10.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 5.0,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 10.0,
+        "color_grade": 10.0,
+        "cleanliness": 5.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 200,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": false,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": true,
+        "has_cleanliness": true,
+        "has_atmosphere": true
+      },
+      "notes": []
+    },
+    {
+      "checkpoint": 1000,
+      "test_key": "3",
+      "test_name": "Test Axe (Semantic Cinematography)",
+      "style_key": "3",
+      "style_name": "Craft Style (Semantic Cinematography)",
+      "seed": "executioner's axe with notched blade, biopunk merging organic and technological, medium shot waist-up, slightly off-axis naturalistic, foreground: soft bokeh of nearby objects, background: crime scene tape fluttering, overcast sky creating massive soft box, mood: serene, atmosphere: clear, peaceful, meditative, textures: eyelash individual separation, latex sheen with stretch tension lines, rain streaks on glass, shot with 35mm f/2.8 lens, color grade: clean natural palette.",
+      "instruction": "Transform this seed into a 200-250 word single-paragraph prompt using semantic cinematography principles. Weave together subject, spatial layout with explicit foreground/midground/background layers, light sources with their effects, three texture types (organic/manufactured/environmental), lens specifications with their optical implications, and emotional atmosphere—all flowing as coherent natural language prose. Preserve the exact lens from input. No camera body brands, no bullets, no line breaks. One rich paragraph.",
+      "response": "A medium waist-up view captures an executioner’s axe resting in its wooden stand, the notched blade—biopunk fusion of organic and technological—its metallic surface catching soft light like a living thing with veins of circuitry. Shot slightly off-axis through a 35mm f/2.8 lens, the composition feels naturally observed, as if caught mid-breath in quiet contemplation. In the foreground, soft bokeh blurs nearby objects—a discarded glove, a rusted boot—while behind it, crime scene tape flutters gently in the breeze, its frayed edges catching faint highlights. The overcast sky acts as a massive soft box, diffusing even illumination across the scene with no harsh shadows, creating a luminous clarity that enhances every texture: individual eyelash separation on a nearby face, subtle stretch tension lines across latex gloves, and fine rain streaks tracing down the glass of an open window in the background. The clean natural palette—dull grays, muted greens, pale blues—evokes serenity without distraction, while the meditative mood is underscored by the calm stillness of the moment. Every detail—from the grain of wood to the sheen on metal—contributes to a world where technology and nature merge in quiet harmony, suspended between past and future.",
+      "score": 80.0,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 10.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 10.0,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 0.0,
+        "aperture": 0.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 20.0,
+        "atmosphere": 5.0
+      },
+      "checks": {
+        "word_count": 200,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": false,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": false,
+        "has_cleanliness": true,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Missing explicit foreground/midground/background layering."
+      ]
+    },
+    {
+      "checkpoint": 1000,
+      "test_key": "4",
+      "test_name": "Test Master (Combined)",
+      "style_key": "4",
+      "style_name": "Master Style (Combined Capabilities)",
+      "seed": "cyberpunk street food vendor in tokyo rain, steam rising from ramen bowl, neon signs reflecting in puddles, cinematic lighting, 85mm lens, high detail",
+      "instruction": "Transform this seed into a definitive single-paragraph masterpiece using principles of visual storytelling and semantic cinematography. Construct a clear visual hierarchy with explicit foreground, midground, and background layers to guide the eye path. Treat light as a narrative force while seamlessly weaving in specific lens specifications, aperture, and depth of field cues. Integrate a symphony of organic, manufactured, and environmental textures to create optical fidelity. Ensure the description flows as immersive, coherent prose that captures both the emotional atmosphere and the physical reality of the scene. No camera brand names. One rich, high-density paragraph.",
+      "response": "A lone, weathered cyberpunk street food vendor, cloaked in oil-stained, rain-slicked denim and the faint sheen of condensation, stands resolutely in the deep, saturated twilight of a Tokyo alleyway, the entire scene captured with the intimate, shallow depth of field afforded by an 85mm f/1.2 lens, which throws the immediate foreground into a creamy bokeh while keeping the vendor's focused expression razor-sharp. The midground is dominated by the steaming, iridescent surface of a large, hand-painted ceramic ramen bowl, its broth a swirling tapestry of deep crimson and burnt orange, the heat visibly distorting the wet asphalt beneath it, creating a subtle, atmospheric haze that catches the light. In the background, towering, monolithic skyscrapers pierce a perpetual, smog-choked sky, their surfaces reflecting the vibrant, electric glow of holographic advertisements—neon signs casting long, distorted streaks across the rain-slicked pavement, where every droplet acts as a tiny, prismatic lens. The overall color grade leans toward desaturated cyan and deep indigo, punctuated only by the warm, amber highlights catching the vendor’s exposed skin and the metallic sheen of discarded circuitry scattered near his workbench, emphasizing the gritty texture of the environment against the ephemeral warmth of the food.",
+      "score": 91.0,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 6.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 10.0,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 15.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 196,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": false,
+        "has_color_grade": true,
+        "has_cleanliness": false,
+        "has_atmosphere": false
+      },
+      "notes": [
+        "Word count out of target range (200-250): 196."
+      ]
+    },
+    {
+      "checkpoint": 1500,
+      "test_key": "1",
+      "test_name": "Test Flag (Visual Storytelling)",
+      "style_key": "1",
+      "style_name": "Transform Style (Visual Storytelling)",
+      "seed": "flag over street",
+      "instruction": "Craft a definitive 200-250 word single-paragraph prompt from this seed using principles of visual storytelling. Construct a clear visual hierarchy guiding the eye path, treat light as a narrative force (analyzing quality, direction, and temperature), and weave in a symphony of organic, manufactured, and environmental textures. Ensure optical fidelity and atmospheric coherence without mentioning specific camera brands. One flowing, immersive paragraph.",
+      "response": "A white flag hangs vertically on a wooden post in the midground, its fabric catching the soft, diffused light that suggests an overcast day or late afternoon. The foreground is defined by a weathered wooden fence with vertical slats casting subtle shadows across the lower frame, creating a sense of depth and framing the central subject. Behind the flag, a row of parked cars fills the background, their metallic surfaces reflecting the ambient glow and adding a layer of manufactured texture to the scene. The lighting is even and gentle, likely from an overcast sky, which minimizes harsh shadows and creates a soft, luminous atmosphere. A shallow depth of field keeps the flag sharply focused while allowing the distant vehicles to gently blur into the background. The lens appears to be a standard 50mm focal length, offering natural perspective with minimal distortion. Textures include the organic weave of the flag's cotton fabric, the smooth grain of the wooden post, the fine scratches on the car paint, and the slight haze in the air that softens the edges of the distant forms. The overall mood is calm and contemplative, evoking quiet observation under neutral light.",
+      "score": 94.0,
+      "score_components": {
+        "single_paragraph": 15.0,
+        "word_count": 9.0,
+        "no_brand": 20.0,
+        "lighting": 15.0,
+        "texture_diversity": 20.0,
+        "visual_hierarchy": 15.0,
+        "lens_mm": 0.0,
+        "aperture": 0.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 194,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": false,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": false,
+        "has_color_grade": false,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 194."
+      ]
+    },
+    {
+      "checkpoint": 1500,
+      "test_key": "2",
+      "test_name": "Test Balloon (Seamless Weave)",
+      "style_key": "2",
+      "style_name": "Expand Style (Seamless Weave)",
+      "seed": "exploding water balloon high speed at golden hour, in photorealistic style, medium shot waist-up, eye-level straight on, depth layering fore mid background, loop lighting portrait, mood: frozen, clouds fluffy cotton, shot with 14mm f/1.8 ultra wide, color grade: blade runner rain neon.",
+      "instruction": "Expand the seed into a 200-250 word single-paragraph prompt seamlessly weaving the subjects, relationships, spatial layout, action, environment, lighting, lens specs, aperture, depth of field, film stock or digital, shot type, camera angle, texture, color grade, and cleanliness cues into a coherent paragraph. Do NOT mention specific camera bodies or brands (like Canon R5, Sony A7), only lens specifications. One paragraph, no bullets, no line breaks.",
+      "response": "A high-speed explosion of a water balloon unfolds in midair during golden hour, captured in photorealistic detail through a medium shot from waist-up perspective that balances intimate focus and expansive context. The camera is positioned eye-level, framing the moment with precise depth layering—sharp foreground droplets suspended mid-explosion, midground ripples fracturing into cascading arcs, and background clouds rendered as soft, fluffy cotton textures glowing against the warm sky. The scene pulses with dynamic motion frozen in time, each droplet catching golden light like scattered diamonds, while the surrounding air shimmers with subtle rain-like mist from the balloon’s burst. Shot through a 14mm f/1.8 ultra-wide lens, the frame stretches horizontally to emphasize the explosive trajectory and spatial tension between chaos and clarity. The color grade channels a Blade Runner-inspired neon palette—deep magentas bleeding into electric blues, saturated greens flickering across wet surfaces, and the golden hour glow casting long, dramatic shadows that deepen the mood. This fusion of hyperreal detail and stylized atmosphere creates a vivid, cinematic tableau where science fiction meets spontaneous joy, all captured with razor-sharp clarity and a sense of frozen timelessness.",
+      "score": 89.33,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 6.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 3.333333333333333,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 10.0,
+        "color_grade": 10.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 186,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": false,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": true,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 186."
+      ]
+    },
+    {
+      "checkpoint": 1500,
+      "test_key": "3",
+      "test_name": "Test Axe (Semantic Cinematography)",
+      "style_key": "3",
+      "style_name": "Craft Style (Semantic Cinematography)",
+      "seed": "executioner's axe with notched blade, biopunk merging organic and technological, medium shot waist-up, slightly off-axis naturalistic, foreground: soft bokeh of nearby objects, background: crime scene tape fluttering, overcast sky creating massive soft box, mood: serene, atmosphere: clear, peaceful, meditative, textures: eyelash individual separation, latex sheen with stretch tension lines, rain streaks on glass, shot with 35mm f/2.8 lens, color grade: clean natural palette.",
+      "instruction": "Transform this seed into a 200-250 word single-paragraph prompt using semantic cinematography principles. Weave together subject, spatial layout with explicit foreground/midground/background layers, light sources with their effects, three texture types (organic/manufactured/environmental), lens specifications with their optical implications, and emotional atmosphere—all flowing as coherent natural language prose. Preserve the exact lens from input. No camera body brands, no bullets, no line breaks. One rich paragraph.",
+      "response": "A medium shot waist-up captures the executioner’s axe in quiet repose, its notched blade glistening under an overcast sky that acts as a vast soft box, diffusing even light across the scene with gentle warmth. Shot through a 35mm f/2.8 lens at a slightly off-axis naturalistic angle, the composition balances intimacy and context—its focus sharp on the weapon while softly blurring foreground elements like scattered leather gloves and rusted chains into soft bokeh. Behind it, crime scene tape flutters faintly in the breeze, its thin fibers catching light as if whispering stillness. The atmosphere is clear, peaceful, meditative—a moment suspended between action and memory. Textures abound: individual eyelashes on the executioner’s face are visible in subtle detail, each one distinct against pale skin; the latex glove on his hand shows fine stretch tension lines where it grips the handle; rain streaks down a glass surface near the blade, each droplet magnifying light like tiny lenses. The clean natural palette enhances these details—soft grays of stone floor, muted greens of moss clinging to iron, warm amber highlights on polished wood—all harmonizing in serene clarity. This biopunk fusion of organic decay and mechanical precision finds its balance not in conflict but in coexistence: the axe, both tool and symbol, rests quietly as if holding breath before the next strike.",
+      "score": 80.0,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 10.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 10.0,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 0.0,
+        "aperture": 0.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 20.0,
+        "atmosphere": 5.0
+      },
+      "checks": {
+        "word_count": 223,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": false,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": false,
+        "has_cleanliness": true,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Missing explicit foreground/midground/background layering."
+      ]
+    },
+    {
+      "checkpoint": 1500,
+      "test_key": "4",
+      "test_name": "Test Master (Combined)",
+      "style_key": "4",
+      "style_name": "Master Style (Combined Capabilities)",
+      "seed": "cyberpunk street food vendor in tokyo rain, steam rising from ramen bowl, neon signs reflecting in puddles, cinematic lighting, 85mm lens, high detail",
+      "instruction": "Transform this seed into a definitive single-paragraph masterpiece using principles of visual storytelling and semantic cinematography. Construct a clear visual hierarchy with explicit foreground, midground, and background layers to guide the eye path. Treat light as a narrative force while seamlessly weaving in specific lens specifications, aperture, and depth of field cues. Integrate a symphony of organic, manufactured, and environmental textures to create optical fidelity. Ensure the description flows as immersive, coherent prose that captures both the emotional atmosphere and the physical reality of the scene. No camera brand names. One rich, high-density paragraph.",
+      "response": "A solitary, grizzled cyberpunk street food vendor stands hunched over a makeshift wooden cart slicked with recent downpour, the foreground dominated by the rich, viscous texture of spilled soy sauce catching the harsh, low-angle illumination filtering through the dense Tokyo smog, creating deep, dramatic shadows beneath the vendor's worn leather apron; the midground is anchored by the vendor himself, his face etched with fatigue, illuminated by the vibrant, saturated glow of a nearby neon sign—perhaps a crimson 'Shokunin'—which casts sharp, elongated reflections across the wet asphalt, blurring the line between reality and digital advertisement. The vendor's hands, calloused and precise, hover near a steaming ceramic bowl of instant ramen, from which thick, almost palpable steam rises, momentarily softening the harsh edges of the scene and introducing a warm, internal light source that contrasts sharply with the cool, blue-green ambient light washing over the scene. Shot with an 85mm prime lens at a wide aperture of f/1.8, the shallow depth of field isolates the vendor’s focused expression, allowing the background—a chaotic tapestry of dripping awnings, stacked crates, and distant, out-of-focus holographic advertisements—to dissolve into an impressionistic bokeh, emphasizing the intimate, intense focus of the culinary act; the overall color grade leans toward deep teals and muted oranges, capturing the gritty, humid atmosphere of a late-night Tokyo alleyway where technology and tradition collide under the relentless, atmospheric rain.",
+      "score": 100.0,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 10.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 10.0,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 15.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 5.0
+      },
+      "checks": {
+        "word_count": 231,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": true,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": []
+    },
+    {
+      "checkpoint": 1750,
+      "test_key": "1",
+      "test_name": "Test Flag (Visual Storytelling)",
+      "style_key": "1",
+      "style_name": "Transform Style (Visual Storytelling)",
+      "seed": "flag over street",
+      "instruction": "Craft a definitive 200-250 word single-paragraph prompt from this seed using principles of visual storytelling. Construct a clear visual hierarchy guiding the eye path, treat light as a narrative force (analyzing quality, direction, and temperature), and weave in a symphony of organic, manufactured, and environmental textures. Ensure optical fidelity and atmospheric coherence without mentioning specific camera brands. One flowing, immersive paragraph.",
+      "response": "A low-angle shot captures a white flag flying above a brick wall in the foreground, its tattered fabric catching sunlight that creates soft highlights on its woven texture. The midground reveals a weathered concrete sidewalk leading into a bustling city street, where pedestrians walk past storefronts and under a sky filled with scattered clouds. In the background, a row of tall buildings recedes into a hazy distance, their forms softened by atmospheric perspective. A wide-angle lens exaggerates the depth of field, keeping the flag sharply focused while gently blurring the distant structures. The lighting is bright and direct, suggesting midday sun that casts long shadows across the pavement and illuminates dust particles suspended in the air. This creates a warm, golden color temperature that enhances the contrast between the cool gray of the brick and the vibrant white of the flag. The overall atmosphere is one of quiet urban life, with subtle textures of peeling paint, cracked asphalt, and fine fabric weave contributing to a rich sensory experience.",
+      "score": 88.75,
+      "score_components": {
+        "single_paragraph": 15.0,
+        "word_count": 3.75,
+        "no_brand": 20.0,
+        "lighting": 15.0,
+        "texture_diversity": 20.0,
+        "visual_hierarchy": 15.0,
+        "lens_mm": 0.0,
+        "aperture": 0.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 168,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": false,
+        "has_aperture": false,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": false,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 168."
+      ]
+    },
+    {
+      "checkpoint": 1750,
+      "test_key": "2",
+      "test_name": "Test Balloon (Seamless Weave)",
+      "style_key": "2",
+      "style_name": "Expand Style (Seamless Weave)",
+      "seed": "exploding water balloon high speed at golden hour, in photorealistic style, medium shot waist-up, eye-level straight on, depth layering fore mid background, loop lighting portrait, mood: frozen, clouds fluffy cotton, shot with 14mm f/1.8 ultra wide, color grade: blade runner rain neon.",
+      "instruction": "Expand the seed into a 200-250 word single-paragraph prompt seamlessly weaving the subjects, relationships, spatial layout, action, environment, lighting, lens specs, aperture, depth of field, film stock or digital, shot type, camera angle, texture, color grade, and cleanliness cues into a coherent paragraph. Do NOT mention specific camera bodies or brands (like Canon R5, Sony A7), only lens specifications. One paragraph, no bullets, no line breaks.",
+      "response": "A burst of water erupts from a shattered balloon in mid-motion, captured at golden hour with razor-sharp clarity through a 14mm f/1.8 ultra-wide lens that exaggerates perspective and depth, framing the moment in photorealistic detail. The subject—eyes locked directly forward—exudes intense focus as droplets scatter outward in perfect spherical arcs, each drop catching the warm glow of low-hanging sunbeams filtering through fluffy cotton clouds above. The composition layers the foreground with glistening water droplets suspended mid-air, midground showing the distorted reflection on wet pavement below, and background revealing layered urban textures—cracked concrete, flickering neon signs, and distant skyscrapers softened by atmospheric haze. Loop lighting sculpts every contour with dramatic chiaroscuro, enhancing the tension between motion and stillness. The color grade blends blade runner’s gritty realism with neon-tinged hues: electric blues, magenta glows, and subtle cyberpunk undertones bleed through the golden light, creating a futuristic yet timeless atmosphere. The ultra-wide perspective emphasizes spatial depth while preserving hyper-detailed realism in skin texture, fabric weave, and water dynamics, all rendered with cinematic precision to evoke both raw energy and quiet drama.",
+      "score": 81.0,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 6.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 5.0,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 0.0,
+        "color_grade": 10.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 0.0
+      },
+      "checks": {
+        "word_count": 182,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": false,
+        "has_color_grade": true,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 182."
+      ]
+    },
+    {
+      "checkpoint": 1750,
+      "test_key": "3",
+      "test_name": "Test Axe (Semantic Cinematography)",
+      "style_key": "3",
+      "style_name": "Craft Style (Semantic Cinematography)",
+      "seed": "executioner's axe with notched blade, biopunk merging organic and technological, medium shot waist-up, slightly off-axis naturalistic, foreground: soft bokeh of nearby objects, background: crime scene tape fluttering, overcast sky creating massive soft box, mood: serene, atmosphere: clear, peaceful, meditative, textures: eyelash individual separation, latex sheen with stretch tension lines, rain streaks on glass, shot with 35mm f/2.8 lens, color grade: clean natural palette.",
+      "instruction": "Transform this seed into a 200-250 word single-paragraph prompt using semantic cinematography principles. Weave together subject, spatial layout with explicit foreground/midground/background layers, light sources with their effects, three texture types (organic/manufactured/environmental), lens specifications with their optical implications, and emotional atmosphere—all flowing as coherent natural language prose. Preserve the exact lens from input. No camera body brands, no bullets, no line breaks. One rich paragraph.",
+      "response": "A medium waist-up shot captures an executioner’s axe in quiet stillness, its notched blade a perfect fusion of biopunk design—organic metal etched with micro-veins and mechanical filaments woven like sinew through steel, each groove catching light like tiny fissures in stone. The composition is slightly off-axis naturalistic, framed by a 35mm f/2.8 lens that renders the scene with crisp clarity and gentle depth. In the foreground, soft bokeh blurs nearby objects—dust motes suspended in air, a half-finished glove resting on a damp surface—while behind them, crime scene tape flutters faintly in the breeze, its edges catching the diffused glow of an overcast sky that acts as a massive soft box, casting even, luminous light across the entire frame. The atmosphere is clear and peaceful, meditative in its stillness. Textures abound: individual eyelashes on a nearby figure’s face are sharply defined against shadowed skin; the latex sheen of a medical glove shows subtle stretch tension lines where it was pulled taut; rain streaks down a glass pane just out of focus, each droplet distinct yet softened by motion blur. The clean natural palette enhances these details—warm earth tones in the axe’s metal, cool grays in the tape, soft greens in the grassy field beyond—all harmonizing under the even, unobtrusive illumination. Every element contributes to a moment of quiet contemplation, where technology and nature coexist in serene balance.",
+      "score": 80.0,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 10.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 10.0,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 0.0,
+        "aperture": 0.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 0.0,
+        "exact_lens_match": 20.0,
+        "atmosphere": 5.0
+      },
+      "checks": {
+        "word_count": 234,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": false,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": true,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": true,
+        "has_color_grade": false,
+        "has_cleanliness": true,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Missing explicit foreground/midground/background layering."
+      ]
+    },
+    {
+      "checkpoint": 1750,
+      "test_key": "4",
+      "test_name": "Test Master (Combined)",
+      "style_key": "4",
+      "style_name": "Master Style (Combined Capabilities)",
+      "seed": "cyberpunk street food vendor in tokyo rain, steam rising from ramen bowl, neon signs reflecting in puddles, cinematic lighting, 85mm lens, high detail",
+      "instruction": "Transform this seed into a definitive single-paragraph masterpiece using principles of visual storytelling and semantic cinematography. Construct a clear visual hierarchy with explicit foreground, midground, and background layers to guide the eye path. Treat light as a narrative force while seamlessly weaving in specific lens specifications, aperture, and depth of field cues. Integrate a symphony of organic, manufactured, and environmental textures to create optical fidelity. Ensure the description flows as immersive, coherent prose that captures both the emotional atmosphere and the physical reality of the scene. No camera brand names. One rich, high-density paragraph.",
+      "response": "In the heart of a perpetual Tokyo downpour, a street food vendor stands resolute amidst the chaotic beauty of urban decay. An 85mm lens captures the intimate yet bustling scene, with a shallow depth of field isolating the vendor in the foreground. Steam curls up from a steaming ramen bowl, its texture rendered with hyper-realistic detail, catching the diffused glow of neon signs. The midground reveals a chaotic cityscape, blurred by motion and the heavy rain, where the reflections of neon signs dance across wet asphalt. The vendor's worn jacket and the condensation on the metal stall are rendered with painstaking attention to texture. The background dissolves into a bokeh-rich tapestry of skyscrapers and flickering advertisements, all bathed in a cool, desaturated color grade. The interplay of hard, directional light from the neon signs and the soft, diffused light of the overcast sky creates a dramatic chiaroscuro effect. The overall atmosphere is one of gritty realism, underscored by the subtle, almost imperceptible grain of the film stock. This is a world alive with sound, smell, and the promise of warmth, captured with an 85mm f/1.4 lens.",
+      "score": 92.67,
+      "score_components": {
+        "single_paragraph": 10.0,
+        "word_count": 6.0,
+        "no_brand": 15.0,
+        "lighting": 10.0,
+        "texture_diversity": 6.666666666666666,
+        "visual_hierarchy": 0.0,
+        "lens_mm": 15.0,
+        "aperture": 10.0,
+        "shot_angle": 0.0,
+        "color_grade": 0.0,
+        "cleanliness": 0.0,
+        "depth_layers": 15.0,
+        "exact_lens_match": 0.0,
+        "atmosphere": 5.0
+      },
+      "checks": {
+        "word_count": 186,
+        "single_paragraph": true,
+        "camera_brand_violations": [],
+        "has_lens_mm": true,
+        "has_aperture": true,
+        "has_depth_layers": true,
+        "exact_lens_match": true,
+        "has_lighting": true,
+        "texture_categories": {
+          "organic": false,
+          "manufactured": true,
+          "environmental": true
+        },
+        "has_visual_hierarchy": true,
+        "has_shot_angle": false,
+        "has_color_grade": true,
+        "has_cleanliness": false,
+        "has_atmosphere": true
+      },
+      "notes": [
+        "Word count out of target range (200-250): 186."
+      ]
+    }
+  ]
+}
