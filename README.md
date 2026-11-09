@@ -135,3 +135,7 @@ The full research paper is available at [`PAPER/paper.md`](PAPER/paper.md), incl
 - [LoRA](https://arxiv.org/abs/2106.09685) (Hu et al., 2021)
 - [PEFT library](https://github.com/huggingface/peft) (Hugging Face)
 - AdS/CFT correspondence, topological data analysis, and optimal transport theory
+
+**Follow me on X [@BennyDaBall_OG](https://x.com/BennyDaBall_OG) !**
+
+**Want to support my work? Buy me a coffee on [Ko-fi](https://ko-fi.com/bennydaball) !**
